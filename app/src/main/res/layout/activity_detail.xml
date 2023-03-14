@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hotel1"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XYZ Hotel"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:background="#8FC2C9"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8FC2C9"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XYZ, Flat no. 307, Rahul delux, Lakadganj, Delhi."
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8FC2C9"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.6000 per night for two pax"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8FC2C9"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lori lived her life through the lens of a camera. She never realized this until this very moment as she scrolled through thousands of images on your computer. She could remember the exact moment each photo was taken. She could remember where she had been, what she was thinking as she tried to get the shot, the smells of the surrounding area, and even the emotions that she felt taking the photo, yet she had trouble remembering what she had for breakfast."
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check in Dete:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8FC2C9"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/checkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Date"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check out Dete:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#8FC2C9"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Date"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Booking"
+                    android:textSize="20dp"
+                    android:background="#8FC2C9"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>
+</LinearLayout>
